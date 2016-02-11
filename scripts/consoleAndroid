@@ -1,0 +1,2 @@
+cd ../
+USER=dtoretto PASS=dtoretto DEBUG=1 MUT=AND calabash-android console FieldLocate-Android-Phone-Business.apk

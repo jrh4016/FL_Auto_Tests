@@ -1,0 +1,4 @@
+export CATALINA_HOME=/Library/Tomcat
+cd ../../Mainproject
+mvn clean -B -f pom.xml -e -Dmaven.test.skip=true package
+cp target/skeds.war ${CATALINA_HOME}/webapps/ROOT.war

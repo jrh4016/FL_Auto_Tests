@@ -1,0 +1,16 @@
+calabash-ios sim location on com.skeds.SkedsMobile
+
+login="sspiegel"
+dbug=0
+reset=1
+bundle_path="$WORKSPACE/build/FieldLocate.app"
+server_url="http://127.0.0.1:8080"
+feature="features/customer_crud.feature
+         features/quick_customer_extra_crud.feature
+         features/appointment_crud.feature
+	 	 features/invoice_crud.feature
+         features/appointment_equipment_service.feature
+         features/appointment_complete.feature
+         features/full_check.feature"
+
+USER=${login} MUT=IOS DEBUG=${dbug} RESET_BETWEEN_SCENARIOS=${reset} DEVICE_TARGET=simulator PROJECT_DIR="=../ServiceSkeds-iOS" APP_BUNDLE_PATH="${bundle_path}" BUNDLE_ID="com.skeds.SkedsMobile" cucumber  ${feature}

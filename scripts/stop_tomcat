@@ -1,0 +1,6 @@
+BUILD_ID=please_do_not_kill_me
+export CATALINA_HOME=/Library/Tomcat
+export CATALINA_OPTS="-Xmx1024M  -XX:MaxPermSize=512M -Djava.awt.headless=true -Dspring.profiles.active=noquartz"
+${CATALINA_HOME}/bin/shutdown.sh
+sudo kill $(ps aux | grep '[t]omcat' | awk '{print $2}')
+#${CATALINA_HOME}/bin/startup.sh 

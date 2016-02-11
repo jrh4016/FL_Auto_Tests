@@ -1,0 +1,2 @@
+cd ../
+USER=dtoretto MUT=IOS SERVER_URL=http://127.0.0.1 DEBUG=1 DEVICE_TARGET=simulator SDK_VERSION_PASSED=7.0-64 PROJECT_DIR="../ServiceSkeds-iOS" APP_BUNDLE_PATH="/Users/jhatfield/git/ServiceSkeds-iOS/build/FieldLocate.app" BUNDLE_ID="com.skeds.SkedsMobile" calabash-ios console

@@ -1,0 +1,15 @@
+cd ../
+
+login="sspiegel"
+dbug=0
+reset=1
+server_url="http://192.168.0.186:8080/ws/"
+feature="features/customer_crud.feature
+         features/quick_customer_extra_crud.feature
+         features/appointment_crud.feature
+	 	 features/invoice_crud.feature
+         features/appointment_equipment_service.feature
+         features/appointment_complete.feature
+         features/full_check.feature"
+
+USER=${login} DEBUG=${dbug} RESET_BETWEEN_SCENARIOS=${reset} SERVER_URL=${server_url} MUT=AND calabash-android run *.apk ${feature}

@@ -1,0 +1,2 @@
+cd ../../ServiceSkeds-iOS
+xcodebuild -target "skeds Universal-cal" CODE_SIGN_IDENTITY="iPhone Developer: Mark O'Shea (PSBB9B4M36)"  CONFIGURATION=debug CONFIGURATION_BUILD_DIR=build -sdk iphonesimulator

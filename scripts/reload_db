@@ -1,0 +1,3 @@
+cd /Users/jhatfield/git/Mainproject/src/main/resources/sql/
+bash reload_test_db.sh
+cat /dev/null > /Users/jhatfield/git/skeds-qa-mobile/features/step_definitions/lib/data/saved_data.txt

@@ -1,0 +1,4 @@
+cd ../../ServiceSkeds-AndroidOS/Skeds-Android-Phone-Business
+ant clean debug -Dsdk.dir=$ANDROID_HOME
+cp /Users/jhatfield/git/ServiceSkeds-AndroidOS/Skeds-Android-Phone-Business/bin/SkedsAndroid-debug-unaligned.apk /Users/jhatfield/git/skeds-qa-mobile/FieldLocate-Android-Phone-Business.apk
+calabash-android resign /Users/jhatfield/git/skeds-qa-mobile/FieldLocate-Android-Phone-Business.apk
